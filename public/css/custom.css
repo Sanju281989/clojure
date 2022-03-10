@@ -1,0 +1,35 @@
+/************* css ****************/
+
+.modal-dialog {
+    max-width: 400px;
+    margin: 1.75rem auto;
+}
+.btn-close {
+    border: 1px solid red;
+    float: right;
+    right: 7px;
+    height: 26px;
+    width: 26px;
+    position: absolute;
+}
+svg.h-4.w-4.sandel {
+    color: red;
+    font-weight: bold;
+}
+h5#exampleModalLabel {
+    color: red;
+    font-weight: bold;
+}
+.hover\:bg-blue-700 {
+    background-color: #cb1c1c !important;
+}
+.bg-purple-600 {
+    background-color: #000 !important;
+}
+
+@media (max-width: 1024px){
+.modal-dialog {
+    max-width: 500px;
+    margin: 1.75rem auto;
+}
+}

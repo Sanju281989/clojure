@@ -1,0 +1,37 @@
+;; shadow-cljs configuration
+{:source-paths
+ ["src/dev"
+  "src/main"
+  "src/test"
+  ]
+
+ :dependencies
+ [[reagent "0.8.1"]
+  [org.clojure/core.async "0.4.500"]
+  [cljs-ajax "0.7.5"]
+  [org.clojure/data.json "2.4.0"]
+  [cljsjs/crypto-js "4.1.1-0"]
+  [cljs-http "0.1.46"]
+  ]
+
+ :dev-http {8000 "public"}
+
+ :builds
+ {:app
+  {:target :browser
+   :asset-path "js"
+   :module-loader true
+   :modules
+   {:main
+    {:init-fn kira.dashboard/init}
+    :secapp
+    {:entries [kira.secapp]
+     :depends-on #{:main}}
+    :help
+    {:entries [kira.help]
+     :depends-on #{:secapp}}}
+
+   :devtools {:loader-mode :eval}
+   }}
+
+ }

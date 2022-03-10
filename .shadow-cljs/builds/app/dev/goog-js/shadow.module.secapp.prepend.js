@@ -1,0 +1,1 @@
+["^ ","~:resource-id",["~:shadow.build.modules/prepend","~:secapp"],"~:source","\nshadow.loader.set_load_start('secapp');","~:js","\nshadow.loader.set_load_start('secapp');"]
